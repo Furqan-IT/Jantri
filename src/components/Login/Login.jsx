@@ -30,11 +30,14 @@ const Login = ({ setIsAuthenticated }) => {
         : { phone: formData.phone, password: formData.password };
 
     try {
-      const response = await fetch(`http://148.135.136.132:3000${endpoint}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        `https://asichambyal.online:3000${endpoint}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (!response.ok) {
         const errorData = await response.json();

@@ -60,7 +60,7 @@ const AddClient = () => {
     try {
       // Send the client data to the backend API
       const response = await fetch(
-        "http://148.135.136.132:3000/api/user/clients",
+        "https://asichambyal.online:3000/api/user/clients",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
