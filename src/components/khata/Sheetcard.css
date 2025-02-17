@@ -1,0 +1,89 @@
+/* SheetCard Styling */
+.sheetcard-khata {
+  width:calc(90%-100%); /* Two cards per row with gap on larger screens */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 5px; /* Space between cards */
+  border-color: #e7e1e1;
+  height: 35px;
+
+}
+
+/* Left Content (Title and Date) */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Right Content (Icons and Labels) */
+.right-content-khata {
+  display: flex;
+  gap: 150px; /* Space between icon groups */
+}
+
+
+/* .icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.label1-khata {
+  font-size: 20px;
+  color: #26c917;
+  /* margin-right: 110px; */
+}
+.label2-khata {
+  font-size: 20px;
+  color: #d11515;
+  margin-right: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .sheetcard {
+    width: 100%; /* Full width on mobile */
+    flex-direction: row; /* Keep content in a row */
+    align-items: center; /* Center items vertically */
+    padding: 12px; /* Reduce padding for smaller screens */
+  }
+
+  .right-content {
+    gap: 10px; /* Reduce gap between icon groups */
+    margin-left: auto; /* Push right content to the right */
+  }
+
+  .icon-group {
+    align-items: center; /* Center icons and labels */
+  }
+
+  .title {
+    font-size: 18px; /* Slightly smaller title on mobile */
+  }
+
+  .icon {
+    font-size: 20px; /* Slightly smaller icons on mobile */
+  }
+
+  .label {
+    font-size: 11px; /* Slightly smaller labels on mobile */
+  }
+}

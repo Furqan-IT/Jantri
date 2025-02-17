@@ -1,0 +1,159 @@
+.navbar3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Add horizontal padding for consistent spacing */
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 65px); /* Dynamic width based on Sidebar */
+  border-bottom: 1px solid #afacac;
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top */
+  z-index: 999; /* Ensure it stays above other content */
+}
+/* Custom Dropdown */
+.input-1-green {
+  position: relative;
+  width: 100px; /* Adjust width as needed */
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid #129e33;
+  margin-right: -125px;
+  position: relative;
+  z-index: 1;
+}
+.input-2-red {
+  position: relative;
+  width: 100px; /* Adjust width as needed */
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid #e91616;
+margin-right: -125px;
+position: relative;
+z-index: 1;
+}
+
+/* Bottom Border for Options */
+.option-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc; /* Border color */
+}
+
+/* Create Sheet Button */
+.btn-1-green {
+  padding: 0.8rem 3.5rem;
+  background-color: #129e33; /* Red */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Pointy corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and icon */
+  margin-left: 190px;
+}
+.btn-2-red {
+  padding: 0.8rem 3.5rem;
+  background-color: #e91616; /* Red */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Pointy corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  /* align-items: center; */
+  margin-left: -90px; 
+}
+.btn-3-green {
+  padding: 0.8rem 1.5rem;
+  background-color: #129e33; /* Red */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Pointy corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  /* display: flex; */
+  align-items: left;
+  /* margin-left: -590px; */
+  z-index: 999;
+}
+.btn-4-red {
+  padding: 0.8rem 1.5rem;
+  background-color: #e91616; /* Red */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Pointy corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  /* align-items: center; */
+  gap: 10px; /* Space between text and icon */
+  /* margin-left: -590px;  */
+  z-index: 999;
+}
+
+.create-sheet:hover {
+  background-color: #b1f916; /* Darker red on hover */
+}
+
+/* Days Left Button */
+.days-left {
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 0; /* Pointy corners */
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.days-left:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Media Query for Smaller Screens (Mobile) */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%; /* Full width on mobile */
+    margin-left: 0; /* No offset for Sidebar */
+    padding: 0.5rem 1rem; /* Reduce padding */
+  }
+
+  .custom-dropdown {
+    width: 150px; /* Adjust width for mobile */
+  }
+
+  .dropdown-header,
+  .create-sheet,
+  .days-left {
+    padding: 0.5rem 1rem; /* Reduce button padding */
+    font-size: 0.6rem; /* Reduce font size */
+  }
+
+  .create-sheet {
+    gap: 5px; /* Reduce space between text and icon */
+    margin-left: -5px; /* Adjust negative margin for mobile */
+  }
+
+  .icons {
+    font-size: 0.9rem; /* Reduce icon size */
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%; /* Full width on mobile */
+    margin-left: 0; /* No offset for Sidebar */
+    padding: 0.5rem 1rem; /* Reduce padding */
+  }
+}

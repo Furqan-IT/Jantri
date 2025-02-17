@@ -1,0 +1,20 @@
+/* HomePage.css */
+.homepage5 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-left: 17%;
+  /* border: 1px solid red; */
+  min-height: 100vh; /* Ensure the homepage takes at least the full viewport height */
+}
+.sheetcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between SheetCards */
+  padding: 20px; 
+  justify-content: flex-start; 
+  /* border: 1px solid red; */
+  min-height: calc(100vh - 400px); 
+  overflow-y: auto;
+}

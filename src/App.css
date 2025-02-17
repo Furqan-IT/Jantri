@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Welcome Page Styles */
+.welcome-page {
+  flex: 1;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.welcome-page h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.welcome-page .vite-logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
