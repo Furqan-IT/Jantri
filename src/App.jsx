@@ -11,7 +11,7 @@ import Sidebar from "./components/Sidebar";
 import AddSheet from "./components/Add Sheet/AddSheet";
 import Khata from "./components/khata/Khata";
 import Account from "./components/Sub Account/Account";
-import AddClient from "./components/Add Client/AddClient";
+import AddClient from "./components/Add-Client/AddClient";
 import Login from "./components/Login/Login";
 import { useEffect, useState } from "react";
 

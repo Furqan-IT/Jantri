@@ -59,11 +59,14 @@ const AddClient = () => {
 
     try {
       // Send the client data to the backend API
-      const response = await fetch("http://localhost:5000/api/user/clients", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newClient),
-      });
+      const response = await fetch(
+        "http://148.135.136.132:3000/api/user/clients",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(newClient),
+        }
+      );
 
       if (!response.ok) {
         const errorData = await response.json();
